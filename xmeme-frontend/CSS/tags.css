@@ -1,0 +1,107 @@
+.navbar-brand {
+  font-size: 30px !important;
+  color: white !important;
+  font-weight: 800;
+}
+body {
+  background-color: #f8f9fa;
+}
+a {
+  text-decoration: none !important;
+}
+a:visited {
+  color: blue;
+}
+
+nav {
+  background-color: #0b5ed7 !important;
+}
+#main_container {
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  flex-direction: row;
+}
+#posts {
+  flex: 2.5;
+}
+
+#upload {
+  flex: 1.5;
+  margin-top: 50px;
+}
+
+.posts-img {
+  width: 80%;
+}
+
+.meme-post {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.meme-post img {
+  width: 100%;
+}
+
+#mb-nav {
+  background-color: white !important;
+  z-index: 900;
+}
+
+#home-click,
+#upload-click {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#mb-nav {
+  width: 100%;
+  background-color: white;
+  display: none;
+}
+#mb-posts,
+#mb-upload {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  border-top: 1px solid rgb(211, 210, 210);
+}
+
+@media screen and (max-width:768px){
+    #main_container{
+        flex-direction: column;
+    }
+    #upload{
+        display: none;
+    }
+    .meme-post{
+        margin:10px 0px!important;
+    }
+    .meme-post:last-child{
+        margin-bottom: 70px !important;
+    }
+    #mb-container{
+        width: 100vw !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    #mb-nav{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+    }
+}

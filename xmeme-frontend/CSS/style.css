@@ -1,0 +1,125 @@
+.navbar-brand{
+    font-size: 30px !important;
+    color: white !important;
+    font-weight: 800;
+}
+body{
+    background-color: #F8F9FA;
+}
+#main_container{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+}
+nav{
+    background-color: #0B5ED7 !important;
+}
+#mb-nav{
+   background-color: white !important;
+   z-index: 900;
+}
+#posts{
+    flex:2.5;
+}
+
+#upload{
+    flex:1.5;
+    margin-top: 50px;
+}
+
+#home-click, #upload-click{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+@media screen and (max-width:768px){
+    #main_container{
+        flex-direction: column;
+    }
+    #upload{
+        display: none;
+    }
+    .meme-post{
+        margin:10px 0px!important;
+    }
+    .meme-post:last-child{
+        margin-bottom: 70px !important;
+    }
+    #mb-container{
+        width: 100vw !important;
+    }
+}
+#mb-nav{
+    width: 100%;
+    background-color: white;
+    display: none;
+}
+#mb-posts, #mb-upload{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:5px;
+    border-top: 1px solid rgb(211, 210, 210);
+}
+#mb-posts{
+    border-right:1px solid rgb(211, 210, 210);
+}
+#mb-posts p, #mb-upload p{
+    margin-bottom: 0px !important;
+}
+
+.posts-img{
+    width: 80%;
+}
+
+a{
+    text-decoration: none !important;
+}
+a:visited{
+    color: blue;
+}
+
+.meme-post{
+    background-color: white;
+    padding:10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meme-post img{
+    width: 100%;    
+}
+
+@media screen and (max-width:768px){
+    #mb-nav{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+#snackbar { 
+    cursor: pointer;
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px; 
+    background-color: #0B5ED7; 
+    opacity: 0.9;
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 6px; 
+    position: fixed;
+    z-index: 1000; 
+    left: 50%; 
+    bottom: 70px; 
+  }
